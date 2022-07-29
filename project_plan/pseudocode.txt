@@ -1,0 +1,22 @@
+    I. Bilgisayarın seçimini, 3 seçenek arasından belirleyen fonksiyonu oluşturmak,
+    II. Oyunu bir el oynayan fonksiyonu oluşturmak,
+        a. Kullanıcıdan gelen veriyi sakla,
+        b, Bilgisayarın seçimini sakla,
+        c. Kullanıcı seçimi ile bilgisayar seçimini karşılaştıran süreci oluştur,
+    III. Oyunu 5 el oynayan fonksiyonu oluştur.
+
+    I.getComputerChoice()
+        array = [rock, paper, scissors]
+        #küme içinden rasgele eleman seçme yöntemi arıyorum.
+        value = Math.floor(Math.random()*array.length)
+        string yöntemi ile tüm harfleri küçült
+        value  değişkenini geri ver,
+    II. playRound(userInput, getComputerChoice())
+        userInput u küçük harf yap
+        eğer iki veri birbirine denkse draw cevabını ver,
+        userInput taş ve getComputerChoice makas ise win cevabını ver etc.
+    III. for döngüsü ile 5 kere çağır
+    
+
+
+    

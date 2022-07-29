@@ -1,0 +1,10 @@
+Problem çözme süreci 3 bölümden oluşmaktadır.
+İlk aşama sorunu anlamaktır.
+
+Sıfırdan bir oyun oluşturuyoruz. 
+Bu iki taraf arasında oynanmaktadır.
+Her iki taraf üç seçimden birini seçmektedir,
+Bu seçimler taş, kağıt ve makastan biri olmaktadır.
+Seçimlerin her biri diğerini alt etmektedir.
+Aynı seçimler ise beraberlik sonucunu oluşmaktadır.
+Program kimin kazandığını göstermektedir.

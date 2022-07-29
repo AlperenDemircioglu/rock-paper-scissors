@@ -1,0 +1,17 @@
+Problem çözme süreci 3 bölümden oluşmaktadır.
+İkinci aşama projeyi tasarlamaktır.
+
+Assigment bölümünde bu iş bizim için yapılmıştır.
+Ben hatırlamaya çalışacağım,
+
+1. Programın arayüzü var mı? Hayır,
+2. Program girdileri nasıl almaktadır. a. Bilgisayardan, b. Kullanıcıdan
+3. Programın geri verdiği değer nedir? Kazananın kim olduğunu bildirir.
+4. Veriler eldeyken süreci adım adım nasıl tasarlarsınız.
+    
+    I. Bilgisayarın seçimini, 3 seçenek arasından belirleyen fonksiyonu oluşturmak,
+    II. Oyunu bir el oynayan fonksiyonu oluşturmak,
+        a. Kullanıcıdan gelen veriyi sakla,
+        b, Bilgisayarın seçimini sakla,
+        c. Kullanıcı seçimi ile bilgisayar seçimini karşılaştıran süreci oluştur,
+    III. Oyunu 5 el oynayan fonksiyonu oluştur.
