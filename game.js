@@ -92,24 +92,33 @@ function updateScore(){
     if(board.textContent.split(" ").includes("win.") == true){
         uScore.textContent ++;
         if( uScore.textContent == 5){
-            board.textContent = "user wins."
+            board.textContent = "user wins. please refresh the page to play again."
+
         }
     }
     else{
         cScore.textContent++;
         if( cScore.textContent == 5){
-            board.textContent = "computer wins."
+            board.textContent = "computer wins. please refresh the page to play again."
         }
     }
 
 }
 
-btn.forEach(a => a.addEventListener('click', function(e){
-    board.textContent = playRound(showMe(e),getComputerChoice);
-}));
-btn.forEach(a => a.addEventListener('click', function(e){
-    updateScore();
-}));
+    btn.forEach(a => a.addEventListener('click', function(e){
+        if(uScore.textContent > 4 || cScore.textContent > 4){
+            return
+        }
+        board.textContent = playRound(showMe(e),getComputerChoice);
+    }));
+
+    btn.forEach(a => a.addEventListener('click', function(){
+        if(uScore.textContent > 4 || cScore.textContent > 4){
+            return
+        }
+        updateScore();
+    }));
+
 
 
 
