@@ -1,12 +1,12 @@
 /* I. Section */
 
-function getPlayerChoice() {
+function getPlayerChoice(input) {
 
-    let userInput = prompt("Provide Rock, paper or scissors");
+    /*let userInput = prompt("Provide Rock, paper or scissors");
 
-    userInput = userInput.toLowerCase();
+    userInput = userInput.toLowerCase(); */
     
-    return userInput;
+    return input;
 }
 
 function getComputerChoice() {
@@ -22,7 +22,7 @@ function getComputerChoice() {
 
 function playRound(user, computer) {
 
-    userInput = user();
+    userInput = user;
     
     answer = computer();
 
@@ -64,7 +64,7 @@ function playRound(user, computer) {
 }
 
 
-// III. Section 
+/* III. Section 
 
 function game() {
 
@@ -75,5 +75,19 @@ function game() {
 
 }
 
+*/
+const rock= document.querySelector("#rock");
+const paper= document.querySelector("#paper");
+const scissors= document.querySelector("#scissors");
+const board = document.querySelector(".roundBoard");
 
-    
+rock.addEventListener('click', function() {
+    board.textContent = (playRound("rock", getComputerChoice));
+});
+paper.addEventListener('click', function() {   
+    board.textContent = (playRound("paper", getComputerChoice))
+});
+scissors.addEventListener('click', function() {
+    board.textContent = (playRound("scissors", getComputerChoice))
+});
+
