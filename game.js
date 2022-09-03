@@ -76,18 +76,42 @@ function game() {
 }
 
 */
-const rock= document.querySelector("#rock");
-const paper= document.querySelector("#paper");
-const scissors= document.querySelector("#scissors");
-const board = document.querySelector(".roundBoard");
 
-rock.addEventListener('click', function() {
-    board.textContent = (playRound("rock", getComputerChoice));
-});
-paper.addEventListener('click', function() {   
-    board.textContent = (playRound("paper", getComputerChoice))
-});
-scissors.addEventListener('click', function() {
-    board.textContent = (playRound("scissors", getComputerChoice))
-});
+const board = document.querySelector(".roundBoard");
+const btn = document.querySelectorAll(".buttons");
+const uScore = document.querySelector("#userScore");
+const cScore = document.querySelector('#computerScore');
+
+function showMe(e){
+    console.log(e.composedPath());
+    return e.composedPath()[0].innerText.toLowerCase();
+
+}
+
+function updateScore(){
+    if(board.textContent.split(" ").includes("win.") == true){
+        uScore.textContent ++;
+        if( uScore.textContent == 5){
+            board.textContent = "user wins."
+        }
+    }
+    else{
+        cScore.textContent++;
+        if( cScore.textContent == 5){
+            board.textContent = "computer wins."
+        }
+    }
+
+}
+
+btn.forEach(a => a.addEventListener('click', function(e){
+    board.textContent = playRound(showMe(e),getComputerChoice);
+}));
+btn.forEach(a => a.addEventListener('click', function(e){
+    updateScore();
+}));
+
+
+
+
 
