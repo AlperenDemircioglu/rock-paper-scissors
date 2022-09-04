@@ -96,7 +96,7 @@ function updateScore(){
 
         }
     }
-    else{
+    else if(board.textContent.split(" ").includes("lose.") == true){
         cScore.textContent++;
         if( cScore.textContent == 5){
             board.textContent = "computer wins. please refresh the page to play again."
